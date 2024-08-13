@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Patua+One&display=swap');
+
+
+:root {
+    --morado: rgba(194, 94, 194, 0.4);
+    --rosado: rgb(221, 88, 221);
+    --verdeazul: rgba(1, 240, 255, 0.7);
+    --violeta: rgb(238, 130, 238);
+    --azul: rgba(1, 240, 255, 0.4);
+    --oscuro: rgb(1, 17, 17);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/img/background.webp);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+}
+
+#div1 {
+    gap: 20px;
+    width: 60%;
+}
+
+.logo {
+    display: inline-block;
+    width: 5.6rem;
+    height: 5.6rem;
+    text-align: center;
+    font-size: 5.6rem;
+    font-family: "Patua One", sans-serif;
+    text-decoration: none;
+    color: var(--rosado);
+    border: 4px solid var(--azul);
+    border-radius: 100px;
+    border-top: 0;
+    padding: 0px 2% 4% 2%;
+    margin: 4%;
+    margin-bottom: 3%;
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Changa", sans-serif;
+}
+
+#precaucion {
+    background: linear-gradient(to right, var(--verdeazul), var(--violeta), var(--verdeazul));
+    width: 90%;
+    margin: 1.5%;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+#entradaTexto {
+    padding: 2%;
+    width: 80%;
+    height: 12rem;
+    margin-left: 3.6rem;
+    background-color: var(--azul);
+    font-family: "Changa", sans-serif;
+    font-size: 2rem;
+    display: block;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(1, 240, 255);
+}
+
+button {
+    display: inline;
+    margin: 1.5%;
+    width: 38%;
+    padding: 15px;
+    font-family: "Changa", sans-serif;
+    font-size: 150%;
+    border-radius: 15px;
+    background: linear-gradient(to right, var(--rosado), rgb(114, 64, 230));
+
+}
+
+#encriptar {
+    margin-left: 3.8rem;
+}
+
+#div2 {
+    background-color: var(--morado);
+    margin: 2%;
+    border-radius: 25px;
+    width: 30%;
+    box-shadow: 5px 5px 5px 5px #FF00FF;
+
+}
+
+#imagen {
+    width: 15.7rem;
+    height: 13.6rem;
+    display: block;
+    border-radius: 360px;
+    opacity: 0.9;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#noEncontrado {
+    font-size: 2.2rem;
+    font-family: "Patua One";
+    padding: 20px;
+}
+
+
+#info {
+    padding: 10px;
+    font-size: 1.4rem;
+    overflow: auto;
+    max-height: 45%;
+}
+
+#copiarMensaje {
+    align-self: center;
+    align-items: center;
+    margin-left: 32%;
+    display: none;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-left: 230px;
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(233, 22, 152) 1px 1px;
+
+
+}
+
+.redSocial {
+    width: 2rem;
+    border-radius: 100px;
+    height: 2rem;
+    display: inline;
+    margin: 5px;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px #FF00FF;
+
+}
