@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/encrypted.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Patua+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="div1">
+                <a href="https://www.aluracursos.com/" title="Visitar a Alura" class="logo">a</a>
+                <label id="precaucion">⚠️Solo letras minúsculas y sin acentos</label>
+                <textarea type="text" pattern="[a-z]+" title="Solo se permiten letras minúsculas"
+                    placeholder="Ingrese texto aquí" id="entradaTexto"></textarea>
+                <button id="encriptar" onclick="encriptar(); ">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar();">Desencriptar</button>
+            </div>
+            
+            <div id="div2">
+                <img src="./img/busqueda.jpg" alt="Persona con una lupa" id="imagen">
+                <label id="noEncontrado">Ningún mensaje fue encontrado</label>
+                <label id="info">Ingresa el texto que desees encriptar o desencriptar.</label>
+                <button id="copiarMensaje" onclick="copiarMensaje();">Copiar</button>
+            </div>
+    </div>
+    <br>
+    <footer>
+        <a href="https://github.com/melissagl123" ><img src="./img/git-hub.jpg" alt="Logo de GitHub" class="redSocial"></a>
+        <a href="https://www.linkedin.com/in/melissa-gonzalezlopez/" ><img src="./img/linkedin.png" alt="Logo de linkedin" class="redSocial"></a>
+        Desarrollado por Melissa
+    </footer>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+
