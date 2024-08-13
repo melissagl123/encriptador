@@ -19,17 +19,14 @@
 
 body {
     background: url(/img/background.webp);
-    background-size: cover;
     box-sizing: border-box;
 }
 
 .container {
     display: flex;
-
 }
 
 #div1 {
-    gap: 20px;
     width: 60%;
 }
 
@@ -63,6 +60,8 @@ label {
     margin: 1.5%;
     margin-top: 0;
     border-radius: 20px;
+    margin-left: 2.3rem;
+
 }
 
 #entradaTexto {
@@ -80,9 +79,10 @@ label {
 }
 
 button {
+
     display: inline;
-    margin: 1.5%;
-    width: 38%;
+    margin-top: 15px;
+    width: 42%;
     padding: 15px;
     font-family: "Changa", sans-serif;
     font-size: 150%;
@@ -92,16 +92,17 @@ button {
 }
 
 #encriptar {
-    margin-left: 3.8rem;
+    margin-left: 3.2rem;
+    margin-right: 1rem;
 }
 
 #div2 {
     background-color: var(--morado);
     margin: 2%;
+    border: 5px solid #FF00FF;
     border-radius: 25px;
-    width: 30%;
-    box-shadow: 5px 5px 5px 5px #FF00FF;
-
+    width: 43%;
+    overflow: auto;
 }
 
 #imagen {
@@ -139,7 +140,7 @@ button {
 footer {
     display: flex;
     align-items: center;
-    margin-left: 230px;
+    justify-content: center;
     font-weight: 900;
     font-size: 25px;
     color: rgb(255, 255, 255);
@@ -160,4 +161,97 @@ button:hover {
     color: rgb(255, 255, 255);
     box-shadow: 2px 2px #FF00FF;
 
+}
+
+@media (max-width:807px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #precaucion {
+        padding: 2%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    #entradaTexto {
+        margin: 5% 0%;
+        width: 100%;
+        padding: 10px;
+        height: 350px;
+    }
+
+    #encriptar {
+        margin-left: 1.1rem;
+        margin-right: 0.9rem;
+    }
+
+    #div2 {
+        margin-left: 2.5rem;
+        width: 70%;
+        margin-top: 5%;
+        max-height: 300px;
+        overflow: auto;
+    }
+
+    #div1 {
+        width: 70%;
+    }
+
+    button {
+        width: 46%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #imagen {
+        display: none;
+    }
+
+    #noEncontrado {
+        font-size: 28px;
+    }
+
+    #info {
+        font-size: 20px;
+    }
+
+    #copiarMensaje {
+        margin: 3%;
+        width: 94%;
+    }
+
+}
+
+@media (max-width:644px) {
+
+    #precaucion {
+        font-size: 1.2rem;
+    }
+
+    #entradaTexto {
+        font-size: 1.3rem;
+    }
+
+    #encriptar {
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #div2 {
+        max-height: 590px;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
 }
